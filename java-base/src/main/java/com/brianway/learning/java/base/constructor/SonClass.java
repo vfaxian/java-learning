@@ -15,6 +15,10 @@ public class SonClass extends FatherClass {
         System.out.println("子类的静态属性countSon初始化:" + countSon);
     }
 
+    {
+        System.out.println("执行了子类的非静态方法块");
+    }
+
     public SonClass(String name) {
         //super(name);
         System.out.println("执行了子类的构造方法SonClass(String name) " + name);
@@ -24,19 +28,4 @@ public class SonClass extends FatherClass {
         System.out.println("执行了子类的无参构造方法");
     }
 
-    public static void main(String[] args) {
-        new SonClass("aaa");
-        new SonClass();
-    }
-
 }
-
-/*
-父类的静态属性count初始化:10
-子类可以访问父类的静态属性count 10
-子类的静态属性countSon初始化:0
-执行了父类的无参构造方法
-执行了子类的构造方法SonClass(String name) aaa
-执行了父类的无参构造方法
-执行了子类的无参构造方法
- */

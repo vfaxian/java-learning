@@ -11,6 +11,10 @@ public class FatherClass {
         System.out.println("父类的静态属性count初始化:" + count);
     }
 
+    {
+        System.out.println("执行了父类的非静态方法块");
+    }
+
     public FatherClass() {
         System.out.println("执行了父类的无参构造方法");
     }

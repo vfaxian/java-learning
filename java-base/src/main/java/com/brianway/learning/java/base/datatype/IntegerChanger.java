@@ -17,7 +17,8 @@ public class IntegerChanger {
 
     public static void main(String[] args) {
         Integer a = 1, b = 2;
-        System.out.println("before swap a = " + a + ", b = " + b);
+        swap1(a,b);
+        System.out.println("swap as usually: a = " + a + ", b = " + b);
         swap(a, b);
         System.out.println("after swap a = " + a + ", b = " + b);
 
@@ -39,6 +40,11 @@ public class IntegerChanger {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
+    }
 
+    public static void swap1(Integer i1, Integer i2) {
+        Integer temp = i2;
+        i2 = i1;
+        i1 = temp;
     }
 }
